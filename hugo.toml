@@ -1,0 +1,37 @@
+baseURL = 'https://rivseab.com/'
+languageCode = 'en-us'
+title = 'Rivers Seaborn'
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
+
+[menu]
+  [[menu.main]]
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+[params]
+  siteName = "Rivers Seaborn"
+  description = "Rivseab's blog"
+  mainSections = ['posts']
+
+[params.author]
+  avatar = "avatar.jpg" 
+  intro = "rivseab"
+  name = "Rivers Seaborn"
+  description = ""
+
+[params.webmanifest]
+  start_url = "/" # will use homepage url by default
